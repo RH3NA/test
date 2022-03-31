@@ -1,8 +1,8 @@
 import org.junit.jupiter.api.Test;
-import java.math.*;
+
 import static org.junit.jupiter.api.Assertions.*;
 
-class StringTest extends Object {
+class StringTest{
 
     @Test
     void test1() {
@@ -10,8 +10,25 @@ class StringTest extends Object {
         int expectedLength = 4;
         assertEquals(expectedLength, actualLength);
     }
-        @Test
-        void test2() {
-        assertEquals(4, (Math.min(3,7)));
+
+    @Test
+    void test2() {
+        assertEquals(4, (Math.min(3, 7)));
     }
+
+    @Test
+    void toUpperCase() {
+        java.lang.String str = "xyz";
+        java.lang.String result = str.toUpperCase();
+        assertEquals("XYZ", result);
+    }
+
+    @Test
+    void contains_basic() {
+        java.lang.String str = "abcd";
+        boolean result = str.contains("ihk");
+        assertTrue(result);
+
+    }
+
 }
