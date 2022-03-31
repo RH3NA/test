@@ -12,6 +12,6 @@ class StringTest extends Object {
     }
         @Test
         void test2() {
-        assertEquals(7, (Math.min(3,7)));
+        assertEquals(4, (Math.min(3,7)));
     }
 }
